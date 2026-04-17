@@ -41,7 +41,7 @@ export default function Home() {
         <div className="w-[760px] h-[760px] rounded-full border-[1px] border-black absolute -right-[380px] -top-[180px] border-dashed"></div>
       </div>
 
-      <header className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12 mb-16 border-b border-zinc-400 pb-12 relative z-10">
+      <header className="flex flex-col lg:flex-row lg:justify-between lg:items-baseline gap-12 mb-16 border-b border-zinc-400 pb-12 relative z-10">
         {/* Left Side: Description Text */}
         <div className="max-w-2xl">
           <p className="text-base text-zinc-800 tracking-tight font-normal leading-loose">
