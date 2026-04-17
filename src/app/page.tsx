@@ -45,16 +45,18 @@ export default function Home() {
         {/* Left Side: Description Text */}
         <div className="max-w-2xl">
           <p className="text-base text-zinc-800 tracking-tight font-normal leading-relaxed">
-            记录 52 周里 AI 在设计领域的演进。<br/>探索人工智能与创意产业交汇点的最新动态与硬核教程。
+            全景追踪 AI 驱动下的设计边界拓展与工作流重塑。<br/>
+            深度汇编全球前沿的生成式模型动态、智能化工具迭代及体验设计新范式，<br/>
+            为专业创作者提供应对智能时代演进的每周认知锚点。
           </p>
         </div>
 
         {/* Right Side: Tech Text */}
         <div className="flex flex-col items-start lg:items-end text-xs font-mono tracking-widest text-zinc-700 gap-4">
           <div className="text-left lg:text-right uppercase leading-loose">
-            <p>SYSTEM ARCHITECTURE</p>
-            <p>RENDER ENGINE: NEXT.JS</p>
-            <p>VOL. 2026 / REV 1.0.0</p>
+            <p>PUBLICATION: AI DESIGN WEEKLY</p>
+            <p>FREQUENCY: WEEKLY ISSUE</p>
+            <p>EDITION: VOL. 2026</p>
           </div>
         </div>
       </header>
