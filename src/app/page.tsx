@@ -45,8 +45,7 @@ export default function Home() {
         {/* Left Side: Description Text */}
         <div className="max-w-2xl">
           <p className="text-base text-zinc-800 tracking-tight font-normal leading-loose">
-            追踪 AI 驱动下的设计边界拓展与工作流重塑。<br/>
-            为专业创作者提供应对智能时代的每周前沿参考。
+            追踪 AI 驱动下的设计边界拓展与工作流重塑。为专业创作者提供应对智能时代的每周前沿参考。
           </p>
         </div>
 
