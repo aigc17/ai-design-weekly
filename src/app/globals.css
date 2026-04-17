@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #EBEBE9;
+  --foreground: #121212;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #D30000;
+  --color-border: #C8C8C8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  /* Using Helvetica/system-ui for that clean Swiss aesthetic */
+  font-family: "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
