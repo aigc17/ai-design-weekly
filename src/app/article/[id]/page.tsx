@@ -58,7 +58,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
         </header>
 
         <article className="prose prose-zinc max-w-none prose-headings:font-medium prose-headings:text-zinc-900 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-3 prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-4 prose-p:text-zinc-600 prose-p:leading-relaxed prose-a:text-[var(--color-primary)] prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-zinc-900">
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              h2: ({ node, ...props }) => {
+                const text = String(props.children);
+                const match = text.match(/(.*?)\s*\{#([^}]+)\}$/);
+                if (match) {
+                  return <h2 id={match[2]} {...props}>{match[1]}</h2>;
+                }
+                return <h2 {...props} />;
+              }
+            }}
+          >
+            {article.content}
+          </ReactMarkdown>
         </article>
       </main>
     </div>
