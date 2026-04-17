@@ -48,7 +48,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
             <span>•</span>
             <span>{article.date}</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
+          <h1 className="text-3xl md:text-4xl font-medium tracking-tight leading-snug mb-8 text-zinc-900">
             {article.title}
           </h1>
           {/* Note: This is where we will hook up automated AI news fetching later. */}
@@ -57,7 +57,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
           </p>
         </header>
 
-        <article className="prose prose-zinc prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-[var(--color-primary)] prose-a:no-underline hover:prose-a:underline prose-img:border prose-img:border-black">
+        <article className="prose prose-zinc max-w-none prose-headings:font-medium prose-headings:text-zinc-900 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-3 prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-4 prose-p:text-zinc-600 prose-p:leading-relaxed prose-a:text-[var(--color-primary)] prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-zinc-900">
           <ReactMarkdown>{article.content}</ReactMarkdown>
         </article>
       </main>

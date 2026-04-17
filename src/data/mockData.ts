@@ -32,8 +32,6 @@ export const mockArticles: Article[] = Array.from({ length: 38 }, (_, i) => {
       { id: 'ai-skills', title: '热门 AI Skills' },
     ],
     content: `
-# 第 ${weekNumber} 周 - AI 设计周刊
-
 欢迎来到 AI 设计周刊第 ${weekNumber} 周的内容。本期发行日期：${dateStr}。
 
 ## AI + AIGC 行业资讯 {#industry-news}
