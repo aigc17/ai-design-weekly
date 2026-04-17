@@ -44,10 +44,9 @@ export default function Home() {
       <header className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12 mb-16 border-b border-zinc-400 pb-12 relative z-10">
         {/* Left Side: Description Text */}
         <div className="max-w-2xl">
-          <p className="text-base text-zinc-800 tracking-tight font-normal leading-relaxed">
-            全景追踪 AI 驱动下的设计边界拓展与工作流重塑。<br/>
-            深度汇编全球前沿的生成式模型动态、智能化工具迭代及体验设计新范式，<br/>
-            为专业创作者提供应对智能时代演进的每周认知锚点。
+          <p className="text-base text-zinc-800 tracking-tight font-normal leading-loose">
+            追踪 AI 驱动下的设计边界拓展与工作流重塑。<br/>
+            为专业创作者提供应对智能时代的每周前沿参考。
           </p>
         </div>
 
