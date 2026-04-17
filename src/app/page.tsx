@@ -53,7 +53,6 @@ export default function Home() {
         <div className="flex flex-col items-start lg:items-end text-xs font-mono tracking-widest text-zinc-700 gap-4">
           <div className="text-left lg:text-right uppercase leading-loose">
             <p>PUBLICATION: AI DESIGN WEEKLY</p>
-            <p>FREQUENCY: WEEKLY ISSUE</p>
             <p>EDITION: VOL. 2026</p>
           </div>
         </div>
